@@ -1,0 +1,100 @@
+NAME
+    MIME::Lite::HT::HTML - Create html mail with MIME::Lite and
+    HTML::Template
+
+SYNOPSIS
+        use MIME::Lite::HT::HTML;
+    
+        my $msg = MIME::Lite::HT::HTML->new(
+            From        => 'from@example.com',
+            To          => 'to@example.com',
+            Subject     => 'Subject',
+            TimeZone    => 'Europe/Berlin',
+            Encoding    => 'quoted-printable',
+            Template    => {
+                html => 'mail.html',
+                text => 'mail.txt',
+            },
+            Charset     => 'utf8',
+            TmplOptions => \%options,
+            TmplParams  => \%params,
+        );
+    
+        $msg->send;
+
+DESCRIPTION
+    This module provide easy interface to make MIME::Lite object with html
+    formatted mail.
+
+METHODS
+    new return MIME::Lite object with html mail format.
+
+ADITIONAL OPTIONS
+  Template
+    This is a mapping of filenames to the two variants of templates (html or
+    text). You define, which file will be used for the html-part and the
+    plain/text part.
+
+    The filenames will be passed to the constructor of HTML::Template, as
+    arument of the filename option. See HTML::Template for more information.
+
+  TmplParams
+    The parameter of a template is set to this option. This parameter must
+    be the reference of hash.
+
+  TmplOptions
+    configuration of HTML::Template is set to this option.
+
+  TimeZone
+    You can specified the time zone of the mail date:
+
+        TimeZone => 'Asia/Shanghai',
+
+    default using 'UTC' if not defined.
+
+  Encoding
+    Mail body will be encoded for tranfer.
+
+       Use encoding:     | If your message contains:
+       ------------------------------------------------------------
+       7bit              | Only 7-bit text, all lines <1000 characters
+       8bit              | 8-bit text, all lines <1000 characters
+       quoted-printable  | 8-bit text or long lines (more reliable than "8bit")
+       base64            | Largely non-textual data: a GIF, a tar file, etc.
+
+    default using '7bit' if not defined.
+
+  Charset
+    You can specified the charset of your mail, both subject and body will
+    using the charset to make mail reader's client satisfied.
+
+       Charset => 'big5',
+
+    And, if you giving the orignal words as UTF8 and attempt to mail them as
+    GB2312 charset, you can define the charset like:
+
+       Charset => [ 'utf8' => 'gb2312' ],
+
+    We will using Encode to make this happy.
+
+AUTHOR
+    Alexander Becker <c a p f a n < a t > g m x . d e> But all I did was c&p
+    from MIME::Lite::HT::HTML
+
+SEE ALSO
+    MIME::Lite::TT MIME::Lite::HT::HTML
+
+LICENSE
+    This library is free software, you can redistribute it and/or modify it
+    under the same terms as Perl itself.
+
+POD ERRORS
+    Hey! The above document had some coding errors, which are explained
+    below:
+
+    Around line 54:
+        You forgot a '=back' before '=head1'
+
+    Around line 193:
+        =back without =over
+

@@ -1,0 +1,7 @@
+Changes
+Makefile.PL
+MANIFEST
+README
+t/MIME-Lite-HT-HTML.t
+lib/MIME/Lite/HT/HTML.pm
+META.yml

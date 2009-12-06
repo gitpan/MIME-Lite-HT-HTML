@@ -12,7 +12,7 @@ use HTML::FormatText::WithLinks;
 use DateTime::Format::Mail;
 use Carp;
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 =head1 NAME
 
@@ -194,12 +194,12 @@ sub remove_utf8_flag {
 
 =head1 AUTHOR
 
-Alexander Becker E<lt>c a p f a n < a t > g m x . d eE<gt>
-But all I did was c&p from L<MIME::Lite::HT::HTML>
+Alexander Becker E<lt>c a p f a n _a.t_ g m x . d eE<gt>
+But all I did was c&p from L<MIME::Lite::TT::HTML>
 
 =head1 SEE ALSO
 
-L<MIME::Lite::TT> L<MIME::Lite::HT::HTML>
+L<MIME::Lite> L<MIME::Lite::TT> L<MIME::Lite::TT::HTML>
 
 =head1 LICENSE
 

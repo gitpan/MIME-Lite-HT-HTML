@@ -78,11 +78,11 @@ ADITIONAL OPTIONS
     We will using Encode to make this happy.
 
 AUTHOR
-    Alexander Becker <c a p f a n < a t > g m x . d e> But all I did was c&p
-    from MIME::Lite::HT::HTML
+    Alexander Becker <c a p f a n _a.t_ g m x . d e> But all I did was c&p
+    from MIME::Lite::TT::HTML
 
 SEE ALSO
-    MIME::Lite::TT MIME::Lite::HT::HTML
+    MIME::Lite MIME::Lite::TT MIME::Lite::TT::HTML
 
 LICENSE
     This library is free software, you can redistribute it and/or modify it

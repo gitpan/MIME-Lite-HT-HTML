@@ -1,6 +1,6 @@
 ---
 name: MIME-Lite-HT-HTML
-version: 0.01
+version: 0.02
 author:
   - 'Alexander Becker <c a p f a n _a.t_ g m x . d e>'
 abstract: Create html mail with MIME::Lite and HTML::Template
@@ -18,7 +18,7 @@ configure_requires:
 provides:
   MIME::Lite::HT::HTML:
     file: lib/MIME/Lite/HT/HTML.pm
-    version: 0.01
+    version: 0.02
 generated_by: Module::Build version 0.340201
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html

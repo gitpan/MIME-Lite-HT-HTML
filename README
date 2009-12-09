@@ -39,11 +39,12 @@ ADITIONAL OPTIONS
     arument of the filename option. See HTML::Template for more information.
 
   TmplParams
-    The parameter of a template is set to this option. This parameter must
-    be the reference of hash.
+    The parameters of a template are set to this options. This parameter
+    must be the reference of hash.
 
   TmplOptions
-    configuration of HTML::Template is set to this option.
+    Configuration of HTML::Template is set to this option (e.g.
+    die_on_bad_params or path).
 
   TimeZone
     You can specified the time zone of the mail date:
@@ -82,7 +83,7 @@ AUTHOR
     from MIME::Lite::TT::HTML
 
 SEE ALSO
-    MIME::Lite MIME::Lite::TT MIME::Lite::TT::HTML
+    HTML::Template MIME::Lite MIME::Lite::TT MIME::Lite::TT::HTML
 
 LICENSE
     This library is free software, you can redistribute it and/or modify it
@@ -92,9 +93,9 @@ POD ERRORS
     Hey! The above document had some coding errors, which are explained
     below:
 
-    Around line 54:
+    Around line 55:
         You forgot a '=back' before '=head1'
 
-    Around line 193:
+    Around line 195:
         =back without =over
 

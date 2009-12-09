@@ -1,5 +1,9 @@
 Revision history for Perl extension MIME::Lite::HT::HTML.
 
+0.03  Sun Dec  6 16:10:42 2009
+	- rt #52622: fix missing dependencies in build script
+	- minor pod changes
+
 0.02  Sun Dec  6 16:10:42 2009
 	- fix typo in pod: references to MIME::Lite::TT::HTML
 

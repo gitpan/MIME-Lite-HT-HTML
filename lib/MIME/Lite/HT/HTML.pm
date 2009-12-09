@@ -12,7 +12,7 @@ use HTML::FormatText::WithLinks;
 use DateTime::Format::Mail;
 use Carp;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 =head1 NAME
 
@@ -41,7 +41,8 @@ MIME::Lite::HT::HTML - Create html mail with MIME::Lite and HTML::Template
 
 =head1 DESCRIPTION
 
-This module provide easy interface to make L<MIME::Lite> object with html formatted mail.
+This module provide easy interface to make L<MIME::Lite> object with html
+formatted mail.
 
 =head1 METHODS
 
@@ -63,12 +64,13 @@ arument of the filename option. See L<HTML::Template> for more information.
 
 =head2 TmplParams
 
-The parameter of a template is set to this option.
+The parameters of a template are set to this options.
 This parameter must be the reference of hash.
 
 =head2 TmplOptions
 
-configuration of L<HTML::Template> is set to this option.
+Configuration of L<HTML::Template> is set to this option (e.g.
+die_on_bad_params or path).
 
 =head2 TimeZone
 
@@ -199,7 +201,7 @@ But all I did was c&p from L<MIME::Lite::TT::HTML>
 
 =head1 SEE ALSO
 
-L<MIME::Lite> L<MIME::Lite::TT> L<MIME::Lite::TT::HTML>
+L<HTML::Template> L<MIME::Lite> L<MIME::Lite::TT> L<MIME::Lite::TT::HTML>
 
 =head1 LICENSE
 

@@ -1,28 +1,27 @@
----
-name: MIME-Lite-HT-HTML
-version: 0.03
-author:
-  - 'Alexander Becker <c a p f a n _a.t_ g m x . d e>'
-abstract: Create html mail with MIME::Lite and HTML::Template
-license: perl
-resources:
-  license: http://dev.perl.org/licenses/
-requires:
-  DateTime::Format::Mail: '>= 0.3001'
-  Encode: 0
-  HTML::FormatText: '>= 2.04'
-  HTML::FormatText::WithLinks: '>= 0.11'
-  HTML::Template: '>= 2.9'
-  MIME::Lite: '>= 3.027'
-  MIME::Words: 0
-  perl: v5.6.0
+--- #YAML:1.0
+name:               MIME-Lite-HT-HTML
+version:            0.04
+abstract:           ~
+author:  []
+license:            unknown
+distribution_type:  module
 configure_requires:
-  Module::Build: 0.340201
-provides:
-  MIME::Lite::HT::HTML:
-    file: lib/MIME/Lite/HT/HTML.pm
-    version: 0.03
-generated_by: Module::Build version 0.340201
+    ExtUtils::MakeMaker:  0
+build_requires:
+    ExtUtils::MakeMaker:  0
+requires:
+    DateTime::Format::Mail:  >= 0.3001
+    Encode:               0
+    HTML::FormatText:     >= 2.04
+    HTML::FormatText::WithLinks:  >= 0.11
+    HTML::Template:       >= 2.9
+    MIME::Lite:           >= 3.027
+    MIME::Words:          0
+no_index:
+    directory:
+        - t
+        - inc
+generated_by:       ExtUtils::MakeMaker version 6.56
 meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.4.html
-  version: 1.4
+    url:      http://module-build.sourceforge.net/META-spec-v1.4.html
+    version:  1.4

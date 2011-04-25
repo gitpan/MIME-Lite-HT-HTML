@@ -12,7 +12,7 @@ use HTML::FormatText::WithLinks;
 use DateTime::Format::Mail;
 use Carp;
 
-our $VERSION = '0.03';
+our $VERSION = '0.04';
 
 =head1 NAME
 
@@ -125,7 +125,8 @@ sub new {
 	my $charset_input  = shift @$charset || 'US-ASCII';
 	my $charset_output = shift @$charset || $charset_input;
 	
-	my %tmpl_options = %{delete $options->{ TmplOptions }};
+	my %tmpl_options = ();
+	%tmpl_options = %{delete $options->{ TmplOptions }} if $options->{ TmplOptions };
 
     my $msg = MIME::Lite->new(
         Subject => encode_subject( delete $options->{ Subject }, $charset_input, $charset_output ),
@@ -201,7 +202,7 @@ But all I did was c&p from L<MIME::Lite::TT::HTML>
 
 =head1 SEE ALSO
 
-L<HTML::Template> L<MIME::Lite> L<MIME::Lite::TT> L<MIME::Lite::TT::HTML>
+L<HTML::Template>, L<MIME::Lite>, L<MIME::Lite::TT>, L<MIME::Lite::TT::HTML>
 
 =head1 LICENSE
 

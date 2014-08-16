@@ -12,11 +12,11 @@ use HTML::FormatText::WithLinks;
 use DateTime::Format::Mail;
 use Carp;
 
-our $VERSION = '0.04';
+our $VERSION = '0.05';
 
 =head1 NAME
 
-MIME::Lite::HT::HTML - Create html mail with MIME::Lite and HTML::Template
+MIME::Lite::HT::HTML - Create HTML mail with MIME::Lite and HTML::Template
 
 =head1 SYNOPSIS
 
@@ -41,7 +41,7 @@ MIME::Lite::HT::HTML - Create html mail with MIME::Lite and HTML::Template
 
 =head1 DESCRIPTION
 
-This module provide easy interface to make L<MIME::Lite> object with html
+This module provide easy interface to make L<MIME::Lite> object with HTML
 formatted mail.
 
 =head1 METHODS
@@ -50,14 +50,16 @@ formatted mail.
 
 =item new
 
-return L<MIME::Lite> object with html mail format. 
+return L<MIME::Lite> object with HTML mail format. 
+
+=back
 
 =head1 ADITIONAL OPTIONS
 
 =head2 Template
 
-This is a mapping of filenames to the two variants of templates (html or text).
-You define, which file will be used for the html-part and the plain/text part.
+This is a mapping of filenames to the two variants of templates (HTML or text).
+You define, which file will be used for the HTML-part and the plain/text part.
 
 The filenames will be passed to the constructor of HTML::Template, as
 arument of the filename option. See L<HTML::Template> for more information.
@@ -193,7 +195,6 @@ sub remove_utf8_flag {
     pack 'C0A*', shift;
 } # /remove_utf8_flag
 
-=back
 
 =head1 AUTHOR
 

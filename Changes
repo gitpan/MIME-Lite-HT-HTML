@@ -1,5 +1,12 @@
 Revision history for Perl extension MIME::Lite::HT::HTML.
 
+0.05  Sat Aug 16 20:04:42 2014
+	- untabified Changes file
+	- re-release because of special chars that were in v0.04
+	- improved Makefile.PL
+	- fixed POD errors
+	- replaced html by HTML
+
 0.04  Mon Apr 25 08:23:42 2011
 	- Allow instantiation of MIME::Lite::HT::HTML object without TmplOptions.
 	- Add new tests for object instantiation without TmplOptions.
